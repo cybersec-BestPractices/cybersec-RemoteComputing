@@ -1,6 +1,6 @@
 
-|  Action       |  Description          |  Mitigation           |
----------------- ----------------------- -----------------------
+| Action        | Description           | Mitigation            |
+-----------------------------------------------------------------
 | keep software up-to-date | keep your devices updated with all software updates, including OS and applications | zero-day exploits, bugs, known vulnerabilities |
 |		|                       |  mitigates the risk of the remote computing system being compromised via the end user workstation  |
 ---------------- ----------------------- -----------------------
