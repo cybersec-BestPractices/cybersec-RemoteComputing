@@ -4,8 +4,8 @@
 
 ### TOC:
   * ssh
-  * [CyberSec Best Practices Summary](summary_BP.md)
   * [CyberSec checklist](cyberSec-checklist.md)
+  * [CyberSec Best Practices Summary](summary_BP.md)
 
 
 ---
