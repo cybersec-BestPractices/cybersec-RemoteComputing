@@ -123,7 +123,7 @@ chmod -R go= $HOME/.ssh/
 # helpful in diagnosing connection, authentication, and configuration problems
 # Multiple -v options increase the verbosity, the maximum is 3.
 
-ssh -v  USERNAME@remote.system.ip
+ssh -v USERNAME@remote.system.ip
 ssh -vv USERNAME@remote.system.ip
 ssh -vvv USERNAME@remote.system.ip
 ```
