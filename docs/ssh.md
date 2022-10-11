@@ -1,14 +1,14 @@
 
 ## Keys Generation
 ### Basic NIST Standards
-```
+```sh
 # generate keys using ed25519
 ssh-keygen -t ed25519
 
 ssh-keygen -t rsa -b 4096
 ```
 
-```
+```sh
 # key generation with comments and specified location
 ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519
 
@@ -20,7 +20,7 @@ cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh
 ```
 
 A typical output of the process of keys' generation would look like this,
-```
+```sh
 $ ssh-keygen -t ed25519
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/home/USERNAME/.ssh/id_ed25519): $HOME/.ssh/system1_id_ed25519
@@ -46,13 +46,13 @@ The key's randomart image is:
 
 The next step would be to transfer the public part of recently generated key
 to the remote system,
-``` 
+```sh
 $ ssh-copy-id -i $HOME/.ssh/system1_id_ed25519.pub USERNAME@remote.system.ip
 ```
 
 
 ## Keys Management
-```
+```sh
 # trasnfer/copy keys to remote system
 ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
 
@@ -75,7 +75,7 @@ the remote resource, a matching username and even the key authority file
 used to connect to this remote server.
 
 ### Single Host
-```
+```sh
 HOST clusterX
      HostName clusterX.IP.address
      User USERNAME
@@ -86,7 +86,7 @@ HOST clusterX
 ### Multiple Hosts
 One could even envision the possibility of including mutliple hosts by adding
 entries in the `~/.ssh/config` file.
-```
+```sh
 HOST clusterX
      HostName clusterX.IP.address
      User USERNAMEonclusterX
@@ -107,7 +107,7 @@ HOST clusterZ
 
 ## Troubleshooting Keys Configurations
 ### Permission Attributes
-```
+```sh
 # look at ~/.ssh permissions
 ls -ld $HOME/.ssh
 
@@ -118,7 +118,7 @@ chmod -R go= $HOME/.ssh/
 ```
 
 ## Debugging/Verbose Mode
-```
+```sh
 # -v activates the "verbose mode": resulting in printing debugging messages
 # helpful in diagnosing connection, authentication, and configuration problems
 # Multiple -v options increase the verbosity, the maximum is 3.
