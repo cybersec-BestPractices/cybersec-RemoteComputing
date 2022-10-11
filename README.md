@@ -3,7 +3,7 @@
  
 
 ### Content:
-  * ssh
+  * [ssh recommendations](docs/ssh.md)
   * [CyberSec checklist](docs/cyberSec-checklist.md)
   * [CyberSec Best Practices Summary](docs/summary_BP.md)
 
