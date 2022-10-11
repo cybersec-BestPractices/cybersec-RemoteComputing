@@ -1,29 +1,3 @@
-## Configuration details
-### Single Host
-```
-HOST clusterX
-     HostName clusterX.IP.address
-     User USERNAME
-     IdentityFile ~/.ssh/USER_clusterX_ed25519 
-```
-
-### Multiple Host
-```
-HOST clusterX
-     HostName clusterX.IP.address
-     User USERNAMEonclusterX
-     IdentityFile ~/.ssh/USER_clusterX_ed25519 
-
-HOST clusterY
-     HostName clusterY.IP.address
-     User USERNAMEonclusterY
-     IdentityFile ~/.ssh/USER_clusterY_ed25519
-
-HOST clusterZ
-     HostName clusterZ.IP.address
-     User USERNAMEonclusterZ
-     IdentityFile ~/.ssh/USER_clusterZ_ed25519
-```
 
 ## Keys Generation
 ### Basic NIST Standards
@@ -60,7 +34,47 @@ ssh -i $HOME/.ssh/USER_clusterY_ed25519 USERNAME@clusterY.IP.address
 ssh -i $HOME/.ssh/USER_clusterZ_ed25519 USERNAME@clusterZ.IP.address
 ```
 
-## Other miscellaneous
+
+## Configuration Details
+By adding details in a configuration file used by ssh, it is possible
+to simplify the connection process to remote servers.
+For instance, one could have an alias to the specific IP address of
+the remote resource, a matching username and even the key authority file
+used to connect to this remote server.
+
+### Single Host
+```
+HOST clusterX
+     HostName clusterX.IP.address
+     User USERNAME
+     IdentityFile ~/.ssh/USER_clusterX_ed25519
+```
+
+
+### Multiple Hosts
+One could even envision the possibility of including mutliple hosts by adding
+entries in the `~/.ssh/config` file.
+```
+HOST clusterX
+     HostName clusterX.IP.address
+     User USERNAMEonclusterX
+     IdentityFile ~/.ssh/USER_clusterX_ed25519
+
+HOST clusterY
+     HostName clusterY.IP.address
+     User USERNAMEonclusterY
+     IdentityFile ~/.ssh/USER_clusterY_ed25519
+
+HOST clusterZ
+     HostName clusterZ.IP.address
+     User USERNAMEonclusterZ
+     IdentityFile ~/.ssh/USER_clusterZ_ed25519
+```
+
+
+
+## Troubleshooting Keys Configurations
+### Permission Attributes
 ```
 # look at ~/.ssh permissions
 ls -ld $HOME/.ssh
