@@ -4,8 +4,8 @@
 
 ### Content:
   * ssh
-  * [CyberSec checklist](cyberSec-checklist.md)
-  * [CyberSec Best Practices Summary](summary_BP.md)
+  * [CyberSec checklist](docs/cyberSec-checklist.md)
+  * [CyberSec Best Practices Summary](docs/summary_BP.md)
 
 
 ---
