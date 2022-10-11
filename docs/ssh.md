@@ -64,7 +64,7 @@ $ ssh-copy-id -i $HOME/.ssh/system1_id_ed25519.pub USERNAME@remote.system.ip
 
 ## Keys Management
 ```sh
-# trasnfer/copy keys to remote system
+# transfer/copy keys to remote system
 ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
 
 # use of an specific key to access clusterX
