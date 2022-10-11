@@ -1,6 +1,12 @@
 
 ## Keys Generation
-### Basic NIST Standards
+### Basic SSH-Keys Generation
+#### Recommended NIST Standards
+| Encryption Algorithm  | Key length | Key generation command |
+|-----------------------|------------|------------------------|
+| ECDSA, EdDSA, DH, MQV | f=224-255 (and above) | `ssh-keygen -t ed25519` |
+| RSA                   | k=2048 (and above)    | `ssh-keygen -t rsa -b 4096` |
+
 ```sh
 # generate keys using ed25519
 ssh-keygen -t ed25519
