@@ -13,6 +13,7 @@
 # generate keys using ed25519
 ssh-keygen -t ed25519
 
+# generate keys using rsa
 ssh-keygen -t rsa -b 4096
 ```
 
@@ -25,6 +26,8 @@ ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address
 
 # copying over keys to remote system
 cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"
+# alternatively one would use the ssh-copy-id command
+ssh-copy-id -i $HOME/.ssh/id_ed25519.pub USERNAME@remote.system.ip
 ```
 
 A typical output of the process of keys' generation would look like this,
