@@ -187,6 +187,11 @@ ssh -vvv USERNAME@remote.system.ip
 
 ##  ControlMaster -- multiplexing 
 
+ssh has an option called `ControlMaster` that enables the sharing of multiple sessions over one single network connection.
+This means that you can connect to the remote system once, enter your credentials, and have all other subsequent ssh sessions utilizing the initial connection without need for re-authentication.
+You can specify such options each time on the command line, but it’s easiest if you put it in your ssh client configuration file so that it applies every time that a connection is launched to the corresponding system.
+
+
 
 ## Tunneling
 
