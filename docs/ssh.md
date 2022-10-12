@@ -222,6 +222,10 @@ in this case the `-fN` flag puts the process in background and sit idle, after a
 
 
 ## Tunneling
+*Tunneling* is a method for transporting data across a network using protocols that are not supported by that network.
+Tunneling works by *encapsulating* packets, i.e. wrapping packets inside of other packets.
+There are many different ways of tunneling, for instance, VPN, ssh tunneling, etc.
+
 In tunneling, or port forwarding, a local port is connected to a port on a remote host or vice versa. So connections to the port on one machine are in effect connections to a port on the other machine.
 
 Typically the options `-f` (go to background), `-N` (do not execute a remote program) and `-T` (disable pseudo-tty allocation) can be useful for connections that are used only for creation of tunnels.
