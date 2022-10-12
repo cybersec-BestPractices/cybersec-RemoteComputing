@@ -186,7 +186,7 @@ ssh -vvv USERNAME@remote.system.ip
 
 
 ##  Multiplexing: `controlMaster`
-Multiplexing is the ability to send more than one signal over a single line or connection. In OpenSSH, multiplexing can re-use an existing outgoing TCP connection for multiple concurrent SSH sessions to a remote SSH server, avoiding the overhead of creating a new TCP connection and reauthenticating each time.
+Multiplexing is the ability to send more than one signal over a single line or connection. In OpenSSH, multiplexing can re-use an existing outgoing TCP connection for multiple concurrent SSH sessions to a remote SSH server, avoiding the overhead of creating a new TCP connection and **reauthenticating each time**.
 
 ssh has an option called `ControlMaster` that enables the sharing of multiple sessions over one single network connection.
 This means that you can connect to the remote system once, enter your credentials, and have all other subsequent ssh sessions utilizing the initial connection without need for re-authentication.
@@ -218,7 +218,8 @@ In tunneling, or port forwarding, a local port is connected to a port on a remot
 
 Typically the options `-f` (go to background), `-N` (do not execute a remote program) and `-T` (disable pseudo-tty allocation) can be useful for connections that are used only for creation of tunnels.
 
-In regular port forwarding, connections to a local port are forwarded to a port on a remote machine. This is a way of securing an insecure protocol or of making a remote service appear as local.
+In regular port forwarding, connections to a local port are forwarded to a port on a remote machine.
+This is a way of **securing an insecure protocol or of making a remote service appear as local**.
 
 ```sh
 ssh -L localPortNbr:localhost:remotePortNbr -l username remote.server.ip
