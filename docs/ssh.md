@@ -173,6 +173,7 @@ chmod -R go= $HOME/.ssh/
 
 
 ## Debugging/Verbose Mode
+Additionally, if we find problems when trying to ssh into a system which we either know the authentication procedure (either keys, password, or MFA) is not behaving or working as expected, we can use the following options when using the ssh command to obtain more verbose detail of the connections,
 ```sh
 # -v activates the "verbose mode": resulting in printing debugging messages
 # helpful in diagnosing connection, authentication, and configuration problems
