@@ -190,8 +190,27 @@ Multiplexing is the ability to send more than one signal over a single line or c
 
 ssh has an option called `ControlMaster` that enables the sharing of multiple sessions over one single network connection.
 This means that you can connect to the remote system once, enter your credentials, and have all other subsequent ssh sessions utilizing the initial connection without need for re-authentication.
-You can specify such options each time on the command line, but it’s easiest if you put it in your ssh client configuration file so that it applies every time that a connection is launched to the corresponding system.
+It is possible to establish this `ControlMaster` setup manually each time on the command line, but instead it's easiest to put it in the ssh client configuration file so that it applies every time that a connection is launched to the corresponding system.
 
+```sh
+HOST clusterX
+     HostName clusterX.IP.address
+     User USERNAMEonclusterX
+     IdentityFile ~/.ssh/USER_clusterX_ed25519
+     ControlMaster auto
+     ControlPath ~/.ssh/controlmasters/%r@%h:%p
+```
+
+When ssh is instructed to use `ControlMaster`, it will look for the special file (a socket) in the `~/.ssh/controlmasters/` directory that is maintaining a connection to the cluster. If it already exists and is open, it'll use it to create a connection without re-authenticating; if it doesn't exist, it'll authenticate and create the file for subsequent use.
+
+Note that all subsequent connections are dependent on the initial connection — if you exit or kill the initial connection all other ones die, too.
+This can obviously be annoying if it happens accidentally. It's easily avoided by setting up a master connection in the background:
+```sh
+ssh -CX -o ServerAliveInterval=30 -fN remoteServer
+```
+in this case the `-fN` flag puts the process in background and sit idle, after authenticating;
+`-C` is for using compression and `X` for X-forwarding,
+`ServerAliveInterval` is used to specify a time interval to keep the sessions open when inactive.
 
 
 ## Tunneling
