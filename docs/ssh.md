@@ -185,7 +185,7 @@ ssh -vvv USERNAME@remote.system.ip
 ```
 
 
-##  Multiplexing: `controlMaster`
+##  Multiplexing: `ControlMaster`
 Multiplexing is the ability to send more than one signal over a single line or connection. In OpenSSH, multiplexing can re-use an existing outgoing TCP connection for multiple concurrent SSH sessions to a remote SSH server, avoiding the overhead of creating a new TCP connection and **reauthenticating each time**.
 
 ssh has an option called `ControlMaster` that enables the sharing of multiple sessions over one single network connection.
