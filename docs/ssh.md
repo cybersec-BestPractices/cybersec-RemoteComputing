@@ -98,6 +98,14 @@ avoiding to repeatedly prompt for it.
 The way to trigger this feature is to use `ssh-add key-file`.
 It is also possible to specify a timeout period (lifetime) for how long to remember the passphrase, using the `-t` flag.
 
+#### Some additional ssh-agent commands
+| ssh-agent command | description |
+|-------------------|-------------|
+| `ssh-add -l`      | Lists fingerprints of all identities currently represented by the agent |
+| `ssh-add -D`      | Delete all identities from the agent |
+| `ssh-add -t life` | Sets the maximum time the agent will keep the given key |
+
+
 #### Customizing SSH keys names
 It is possible to specify the name of the file where to store the keys when generating them.
 By default ssh will search for predefined file names, such as `id_ed25519` or `id_rsa`.
@@ -228,6 +236,7 @@ ssh -L localPortNbr:localhost:remotePortNbr -l username remote.server.ip
 In that way connections on the local machine made to the forwarded port will in effect be connecting to the remote machine.
 
 An application of this is the usual utilization of ssh-tunnels to establish VNC connections to remote locations.
+
 
 
 ---
