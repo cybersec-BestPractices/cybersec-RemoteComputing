@@ -1,6 +1,6 @@
 # Multi-Factor Authentication (MFA)
 
-- Google Authenticator
+- Google Authenticator -- https://github.com/google/google-authenticator
 - DUO
 - YubiKeys
-- PrivacyIdea
+- PrivacyIdea -- https://www.privacyidea.org/
