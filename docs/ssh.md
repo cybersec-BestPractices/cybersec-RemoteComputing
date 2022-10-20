@@ -249,7 +249,8 @@ This sometimes can be handy and useful but in most of the cases could also be sl
 
 `ssh` offers two options to enable X-forwarding: `-X` and `-Y`, and this alternatives
 are related to security concerns.
-From `ssh` documentation
+
+From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 ```
     -X      Enables X11 forwarding.  This can also be specified on a per-host basis in a configuration file.
 
