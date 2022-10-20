@@ -243,10 +243,27 @@ An application of this is the usual utilization of ssh-tunnels to establish VNC 
 
 
 ## Graphics Forwarding
-Also known as X11 forwarding or just X-forwarding, is the ability to forward grpahical output from the remote system to the local host connected via ssh.
-This sometimes can be handy and useful but in most of the cases could be slow.
-`ssh` offers two options to enable X-forwarding: `-X` and `-Y`.
+Also known as X11 forwarding or just X-forwarding, is the ability to forward
+graphical output from the remote system to the local host connected via ssh.
+This sometimes can be handy and useful but in most of the cases could also be slow.
 
+`ssh` offers two options to enable X-forwarding: `-X` and `-Y`, and this alternatives
+are related to security concerns.
+From `ssh` documentation
+```
+    -X      Enables X11 forwarding.  This can also be specified on a per-host basis in a configuration file.
+
+             X11 forwarding should be enabled with caution.  Users with the ability to bypass file permissions on the
+             remote host (for the user's X authorization database) can access the local X11 display through the forwarded
+             connection.  An attacker may then be able to perform activities such as keystroke monitoring.
+
+             For this reason, X11 forwarding is subjected to X11 SECURITY extension restrictions by default.  Please refer
+             to the ssh -Y option and the ForwardX11Trusted directive in ssh_config(5) for more information.
+
+     -x      Disables X11 forwarding.
+
+     -Y      Enables trusted X11 forwarding.  Trusted X11 forwardings are not subjected to the X11 SECURITY extension controls.
+```
 ---
 
 # References:
