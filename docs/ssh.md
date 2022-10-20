@@ -242,6 +242,10 @@ In that way connections on the local machine made to the forwarded port will in 
 An application of this is the usual utilization of ssh-tunnels to establish VNC connections to remote locations.
 
 
+## Graphics Forwarding
+Also known as X11 forwarding or just X-forwarding, is the ability to forward grpahical output from the remote system to the local host connected via ssh.
+This sometimes can be handy and useful but in most of the cases could be slow.
+`ssh` offers two options to enable X-forwarding: `-X` and `-Y`.
 
 ---
 
