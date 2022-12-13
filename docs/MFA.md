@@ -4,3 +4,6 @@
 - DUO
 - YubiKeys
 - PrivacyIdea -- https://www.privacyidea.org/
+
+---
+*Last Modified: Oct. 12, 2022*
