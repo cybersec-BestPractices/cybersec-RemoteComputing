@@ -12,4 +12,4 @@
 
 ---
 
-*Last Modified: Oct. 12, 2022* -- ver. 0.1
+*Last Modified: Oct. 12, 2022*  --  v 0.1
