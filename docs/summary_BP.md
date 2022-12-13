@@ -15,3 +15,8 @@
 
 
 Summary of some best practices for end users to enhance cybersecurity in remote computing.
+
+
+---
+
+*Last Modified: Oct. 10, 2022*
