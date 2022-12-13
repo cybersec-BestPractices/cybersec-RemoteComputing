@@ -11,3 +11,5 @@
   * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](doc/paper.pdf)
 
 ---
+
+*Last Modified: Oct. 12, 2022*
