@@ -10,7 +10,7 @@
 | firewall | "middle-ware" (hardware and/or software) to intercept and filter potential attacks  | brute-force attacks, malicious network traffic |
 | use an antivirus | local protection against wide spectrum of malware | multiple types of malware  -- mitigates the risk of the remote computing system being compromised via the end user workstation |
 | use a passwords manager | specialized tool to more securely (i.e. using encryption) store passwords and generate strong passwords, which is useful if SSH keys as an authentication method  is not available  | password stealing, password brute-force  |
-| encrypted signed email | enhance authenticity and validity of email communications | MITM attacks, impersonation |
+| encrypted signed email (e.g. using PGP) | enhance authenticity and validity of email communications | MITM attacks, impersonation |
 
 
 
