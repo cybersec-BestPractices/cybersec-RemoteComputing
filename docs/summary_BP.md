@@ -17,6 +17,8 @@
 Summary of some best practices for end users to enhance cybersecurity in remote computing.
 
 
+
+# ADD ssh-summary table
 ---
 
 *Last Modified: Oct. 10, 2022*  --  v 0.1
