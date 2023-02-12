@@ -11,7 +11,7 @@
 
 	- [ ] verify for https connections and SSL certificates
 
-   - [ ] do not plug any type of devices of unkown origin or source, e.g. USB-devices, etc.
+   - [ ] do not plug any type of device of unkown origin or source, e.g. USB-devices, memory sticks, memory cards, etc.
 
    - [ ] use a password manager, do not store passwords in plain-text and use a different password for each service
 
