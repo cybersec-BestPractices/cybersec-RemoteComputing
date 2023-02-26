@@ -26,7 +26,6 @@
 |                             |                                       |
 |                             | `# ssh using specific key file`         |
 |                             | `ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address` |
-|                             | ```                                   |
 +-----------------------------+---------------------------------------+
 | transfer                    | `ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip` |
 |                             |                                       |
@@ -39,13 +38,14 @@
 +-----------------------------+---------------------------------------+
 
 ## Troubleshooting
-+-----------------------------+---------------------------------------+
-| debugging (verbose mode)    | `# -v activates the "verbose mode": resulting in printing debugging messages` |
-|                             | `# helpful in diagnosing connection, authentication, and configuration problems` |
-|                             | `# Multiple -v options increase the verbosity, the maximum is 3.` |
-|                             |                                       |
-|                             | `ssh -v  USERNAME@remote.system.ip`     |
-|                             | `ssh -vv USERNAME@remote.system.ip`     |
-|                             | `ssh -vvv USERNAME@remote.system.ip`    |
-|                             | ```                                   |
-+-----------------------------+---------------------------------------+
+
+### Debugging (verbose mode)
+```
+# -v activates the "verbose mode": resulting in printing debugging messages
+# helpful in diagnosing connection, authentication, and configuration problems
+# Multiple -v options increase the verbosity, the maximum is 3.
+
+ssh -v  USERNAME@remote.system.ip
+ssh -vv USERNAME@remote.system.ip
+ssh -vvv USERNAME@remote.system.ip
+```
