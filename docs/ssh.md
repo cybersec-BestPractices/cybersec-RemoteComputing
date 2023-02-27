@@ -269,6 +269,7 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 ---
 
 # References:
+  - [ssh summary](docs\/ssh-summary.md)
   - https://en.wikibooks.org/wiki/OpenSSH
 
 ---
