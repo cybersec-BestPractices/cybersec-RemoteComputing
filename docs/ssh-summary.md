@@ -10,32 +10,38 @@
 |                             | `ssh -Y username@remote.system.IP`    |
 | tunneling                   | `ssh -R remPort:remote_host:locPort username@remote.system.IP` |
 |                             | `ssh -L locPort:remote_host:remPort username@remote.system.IP` |
-|                             | `ssh -fN -[R|L] port:remote_host:port username@remote.system.IP` |
+|                             | `ssh -fN -[R _or_ L] port:remote_host:port username@remote.system.IP` |
 | remote execution            | `ssh username@remote.system.IP "remote_cmd_to_exec"` |
 
 
 ## Keys
+### Generation
+```
+ssh-keygen -t ed25519
 
-| Keys                        |                                       |
-|-----------------------------|---------------------------------------|
-|  generation                 | `ssh-keygen -t ed25519`               |
-|                             | `ssh-keygen -t rsa -b 4096`           |
-+-----------------------------+---------------------------------------+
-|                             | `# key generation with comments and specified location` |
-|                             | `ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519` |
-|                             |                                       |
-|                             | `# ssh using specific key file`         |
-|                             | `ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address` |
-+-----------------------------+---------------------------------------+
-| transfer                    | `ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip` |
-|                             |                                       |
-|                             | `# copying over keys to remote system`  |
-|                             | `cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"` |
-+-----------------------------+---------------------------------------+
-| agent to recall key         | `ssh-add key-file`                    |
-|                             |                                       |
-|                             | `ssh-add key-file -t life`            |
-+-----------------------------+---------------------------------------+
+ssh-keygen -t rsa -b 4096
+
+# key generation with comments and specified location
+ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519
+
+# ssh using specific key file
+ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address
+```
+
+### Transfer
+```
+ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
+
+# copying over keys to remote system
+cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"
+```
+
+### Agent to recall key
+```
+ssh-add key-file
+ssh-add key-file -t life
+```
+
 
 ## Troubleshooting
 
