@@ -8,6 +8,7 @@
   * [VNC](docs/VNC.md) / [VPN](docs/VPN.md)
   * [CyberSec Checklist](docs/cyberSec-checklist.md)
   * [CyberSec Best Practices Summary](docs/summary_BP.md)
+  * [All sections in one document](docs/ALLinONE.md)
   * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](doc/paper.pdf)
 
 ---
