@@ -18,7 +18,9 @@ Summary of some best practices for end users to enhance cybersecurity in remote 
 
 
 
-# ADD ssh-summary table
+# `ssh` Summary
+A summary of the most relevant aspects is avaikable [here](docs/ssh-summary.md).
+
 ---
 
 *Last Modified: Oct. 10, 2022*  --  v 0.1
