@@ -268,7 +268,7 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 ```
 ---
 
-# References:
+# References
   - [ssh summary](./ssh-summary.md)
   - https://en.wikibooks.org/wiki/OpenSSH
 
