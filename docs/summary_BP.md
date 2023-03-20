@@ -19,7 +19,7 @@ Summary of some best practices for end users to enhance cybersecurity in remote 
 
 
 ## `ssh` Summary
-A summary of the most relevant aspects is avaikable [here](./ssh-summary.md).
+A summary of the most relevant aspects is available [here](./ssh-summary.md).
 
 ---
 
