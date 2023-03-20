@@ -10,7 +10,7 @@
   * [CyberSec Best Practices Summary](docs/summary_BP.md)
   * [All sections in one document](docs/ALLinONE.md)
   * [Summary Portable Document](docs/cybersec_BP_summary.pdf)
-  * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](doc/paper.pdf)
+  * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](docs/paper.pdf)
 
 ---
 
