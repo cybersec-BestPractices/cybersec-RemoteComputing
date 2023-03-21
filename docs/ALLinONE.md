@@ -276,3 +276,197 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 
 *Last Modified: Oct. 12, 2022*  --  v 0.1
 
+# Multi-Factor Authentication (MFA)
+
+- Google Authenticator -- https://github.com/google/google-authenticator
+- DUO
+- YubiKeys
+- PrivacyIdea -- https://www.privacyidea.org/
+
+---
+*Last Modified: Oct. 12, 2022*  --  v 0.1
+
+# Virtual Network Computing (VNC)
+  - is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol (RFB) to remotely control another computer
+  - more efficient and selective way to display graphics from a remote connection
+  - it requires the implementation of a *tunnel* or the remote host to allow connections to given ports.
+
+## Set up a VNC connection 
+
+ 1. ssh into the remote server, e.g.
+    ```sh
+    ssh userName@remote.server.ip
+    ```
+2. launch a VNC server in the remote host, e.g. `vncserver`
+3. Check with `vncserver -list` , and take note of the port number, usually denoted as `:XXXX`
+3. set a password using `vncpasswd` -- **do NOT leave a password-less VNC setup**!!!
+4. ssh into remote server creating a *tunnel to the local machine*, i.e.
+   ```sh
+   ssh -fN -L5904:localhost:XXXX userNAME@remote.server.ip
+   ```
+5. in your local machine launch a VNC client, eg. remina, tigervnc, etc.
+   In MacOS, you can type in the terminal,
+      `open vnc://localhost:5904`
+
+---
+
+References:
+  - https://datatracker.ietf.org/doc/html/rfc6143
+
+---
+*Last Modified: Oct. 12, 2022*  --  v 0.1
+# Virtual Private Network (VPN)
+VPN is a secure, encrypted connection over a publicly shared network.
+Tunneling is the process by which VPN packets reach their intended destination, which
+is typically a private network.
+
+---
+
+*Last Modified: Oct. 12, 2022*  --  v 0.1
+Although not extrictely linked to *remote computing* many different aspects
+in our day-to-day operations involve remote transfering of information, as well as, remote access, trust, etc.
+Among one of the most relevant tools and commodities employed nowadays is eletronic-mail, e-mail.
+
+
+## Email
+In the same way that it is important to validate
+the integrity and validity of our connections to remote systems, it would also be for other types
+of communications, such as electronic messages, or email.
+In particular, for *email* a tool called **Pretty Good Privacy** (PGP) can be used to ensure the confidentiality %of the messages exchanged, as well as validate the identity of the sender.
+PGP is an encryption method that provides cryptographic
+privacy and authentication for data communication.
+The basic idea is to encrypt the communication (similar to how using *ssh-keys*
+would do it) and sign it so that the message received at the other end of the
+communication channel can be decrypted, validated and authenticated.
+
+### Refs.
+   - https://en.wikipedia.org/wiki/Pretty_Good_Privacy
+
+# Cyber-security Checklist
+
+* In your *local system*:
+
+  - [ ] use an anti-virus
+
+  - [ ] keep software up-to-date with the latest patches, including the ones for the Operating System (OS)
+
+  - [ ] be mindful of emails, malicious attachments and links:
+	- [ ] do not enter sensitive data in unknown websites,
+
+	- [ ] verify for https connections and SSL certificates
+
+   - [ ] do not plug any type of device of unkown origin or source, e.g. USB-devices, memory sticks, memory cards, etc.
+
+   - [ ] use a password manager, do not store passwords in plain-text and use a different password for each service
+
+   - [ ] encrypt sensitive data
+
+* When connecting to *remote systems*:
+   - [ ] use ssh keys, with passphrases
+
+   - [ ] use MFA
+
+   - [ ] use VPN
+
+   - [ ] check the information provided by the remote system (usually at the moment of logging in), about when have you connected and from which locations
+
+   - [ ] consider using ``private browsing'' and set restrictions on *cookies* policies in your web browser
+		and when visiting websites with tracking and third party cookies
+
+---
+
+Cyber-security *checklist*: main elements to take into
+consideration to enhance the cyber-security in your local and remote work
+spaces.
+
+
+---
+
+*Last Modified: Oct. 10, 2022*  --  v 0.1
+
+| Action        | Description           | Mitigation            |
+|---------------|-----------------------|-----------------------|
+| keep software up-to-date | keep your devices updated with all software updates, including OS and applications | zero-day exploits, bugs, known vulnerabilities -- mitigates the risk of the remote computing system being compromised via the end user workstation  |
+| use ssh to connect to remote systems | de-facto tool to connect to remote systems using asymmetric encryption | MITM attacks, packet interception (sniffing) |
+| use ssh-keys | more efficient and convenient way to authenticate | key-loggers, stolen credentials |
+| use ssh-keys + MFA  | enhanced way to authenticate | stolen private key |
+| verify fingerprint of remote system | checks validity and authenticity of remote system by comparing system's fingerprints with publicly reported ones | MITM attacks, IP spoofing |
+| connect through VPN | improves network protection and privacy by creating an encrypted channel over unsecured networks such as the Internet | MITM attacks, sensitive data exposure |
+| firewall | "middle-ware" (hardware and/or software) to intercept and filter potential attacks  | brute-force attacks, malicious network traffic |
+| use an antivirus | local protection against wide spectrum of malware | multiple types of malware  -- mitigates the risk of the remote computing system being compromised via the end user workstation |
+| use a passwords manager | specialized tool to more securely (i.e. using encryption) store passwords and generate strong passwords, which is useful if SSH keys as an authentication method  is not available  | password stealing, password brute-force  |
+| encrypted signed email (e.g. using PGP) | enhance authenticity and validity of email communications | MITM attacks, impersonation |
+
+
+
+Summary of some best practices for end users to enhance cybersecurity in remote computing.
+
+
+
+## `ssh` Summary
+A summary of the most relevant aspects is available [here](./ssh-summary.md).
+
+---
+
+*Last Modified: Oct. 10, 2022*  --  v 0.1
+# SSH Summary
+
+## Connections, forwarding and tunneling
+
+| Connections, forwarding and tunneling   |                           |
+|-----------------------------|---------------------------------------|
+| connection to remote system | `ssh username@remote.system.IP`       |
+|                             | `ssh username@remote.system.IP -p PORTnbr` |
+| with graphics-forwarding    | `ssh -X username@remote.system.IP`    |
+|                             | `ssh -Y username@remote.system.IP`    |
+| tunneling                   | `ssh -R remPort:remote_host:locPort username@remote.system.IP` |
+|                             | `ssh -L locPort:remote_host:remPort username@remote.system.IP` |
+|                             | `ssh -fN -[R _or_ L] port:remote_host:port username@remote.system.IP` |
+| remote execution            | `ssh username@remote.system.IP "remote_cmd_to_exec"` |
+
+
+## Keys
+### Generation
+```
+ssh-keygen -t ed25519
+
+ssh-keygen -t rsa -b 4096
+
+# key generation with comments and specified location
+ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519
+
+# ssh using specific key file
+ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address
+```
+
+### Transfer
+```
+ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
+
+# copying over keys to remote system
+cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"
+```
+
+### Agent to recall key
+```
+ssh-add key-file
+ssh-add key-file -t life
+```
+
+
+## Troubleshooting
+
+### Debugging (verbose mode)
+```
+# -v activates the "verbose mode": resulting in printing debugging messages
+# helpful in diagnosing connection, authentication, and configuration problems
+# Multiple -v options increase the verbosity, the maximum is 3.
+
+ssh -v  USERNAME@remote.system.ip
+ssh -vv USERNAME@remote.system.ip
+ssh -vvv USERNAME@remote.system.ip
+```
+# Further References and Resources
+  - "High-Performance Computing (HPC) Security: Architecture, Threat Analysis, and Security Posture",
+    https://csrc.nist.gov/publications/detail/sp/800-223/draft
+    Dated: Feb. 2023
