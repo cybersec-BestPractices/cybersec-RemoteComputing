@@ -15,9 +15,9 @@
   * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](docs/paper.pdf)
 
 ## Further Resources
-  * Users contributions can be done using our wiki
+  * Users contributions can be done using the [wiki section](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/wiki)
   * Questions are welcome using the repository [issues](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/issues)
-  * Comments and scholarly discussons can be started and followed via the [discussions session](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/discussions)
+  * Comments and scholarly discussons can be started and followed via the [discussions section](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/discussions)
 
 
 ---
