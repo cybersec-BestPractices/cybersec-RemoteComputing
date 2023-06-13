@@ -23,11 +23,11 @@
 
 # Other Remote Accessible Protocols
 VNC is one protocol used to remotely access computational resources but there are many other ones.
-For instance, communication applications may use their own ones to give users access to control remote resources, or specialized applications may entitle users to control remote computers using propietary protocols.
+For instance, communication applications may use their own ones to give users access to control remote resources, or specialized applications may entitle users to control remote computers using proprietary protocols.
 Another example of such is the *Remote Desktop Protocol* (RDP) mostly used in Windows machines.
 
 Independently of the specific protocol used, one should note that these are a liability form cyber-security considerations.
-Extreme caution must be followed when using these type of tools, and awareness that they may weaken the cybersecturity perimeter of an organization or device by enabling weak or blind spots when accessing the remote resource.
+Extreme caution must be followed when using these type of tools, and awareness that they may weaken the cybersecurity perimeter of an organization or device by enabling weak or blind spots when accessing the remote resource.
 
 
 ---

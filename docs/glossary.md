@@ -17,7 +17,7 @@
 * `AES`
    advanced encryption standard
 * `HTTP`|`HTTPS`
-     hypertext transfer protocol, secure hyptertext transfer protocol
+     hypertext transfer protocol, secure hypertext transfer protocol
 * `MFA` | `2FA`
      multi-factor (or two-factor) authentication, see [MFA](./MFA.md)
 * `OTP`
