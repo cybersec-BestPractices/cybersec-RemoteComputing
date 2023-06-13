@@ -19,7 +19,7 @@
 * `HTTP`|`HTTPS`
      hypertext transfer protocol, secure hyptertext transfer protocol
 * `MFA` | `2FA`
-     multi-factor (or two-factor) authentication, see [MFA](docs/MFA.md)
+     multi-factor (or two-factor) authentication, see [MFA](./MFA.md)
 * `OTP`
      one time password
 * `PGP`
@@ -31,11 +31,11 @@
 * `SHA`
      secure hash algorithm
 * `ssh`
-    secure shell, see [ssh](docs/ssh-summary.md)
+    secure shell, see [ssh](./ssh-summary.md)
 * `VPN`
-    virtual private network, see [VPN](docs/VPN.md)
+    virtual private network, see [VPN](./VPN.md)
 * `VNC`
-    virtual network computing, see [VNC](docs/VNC.md)
+    virtual network computing, see [VNC](./VNC.md)
 
 ---
 
