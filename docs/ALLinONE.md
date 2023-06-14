@@ -496,6 +496,10 @@ ssh -v  USERNAME@remote.system.ip
 ssh -vv USERNAME@remote.system.ip
 ssh -vvv USERNAME@remote.system.ip
 ```
+
+
+---
+*Last Modified: Oct. 12, 2022*  --  v 0.1
 # Further References and Resources
   - "High-Performance Computing (HPC) Security: Architecture, Threat Analysis, and Security Posture",
     https://csrc.nist.gov/publications/detail/sp/800-223/draft
