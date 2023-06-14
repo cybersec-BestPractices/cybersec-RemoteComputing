@@ -12,6 +12,9 @@ The generic term employed to describe this type of attacks is *social engineerin
 These attacks are still responsible for large number of cybersecurity breaches, and has been reported that even robust implementations, such as the utilization of MFA combied with other authentication mechansims, could be overcome by convincing and carefully crafted manipulation.
 One of the best advices agaisnt this type of manipulative attacks is to always remain vigilant and suspicious, in particular do NOT trust any sources of unknown procedence or origin.
 
+   - "Social engineering in cybersecurity: The evolution of a concept", J.M.Hatfield; Computers & Security 73 (2018)
+     https://doi.org/10.1016/j.cose.2017.10.008
+
 
 ## PQC - Post Quantun Cryptography
 With the recent advances of quantum computers, one of the potential applications and immediate concers is the capability for "powerful" enough quantum devices to *break* the encryption alogorithm used nowadays.
