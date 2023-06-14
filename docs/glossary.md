@@ -9,7 +9,8 @@
 ## PQC - Post Quantun Cryptography
    - "NIST / Post-Quantum Cryptography"
       https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022
-
+   - "Post-quantum cryptography", Bernstein, Lange; Nature 549 (2017)
+     https://www.nature.com/articles/nature23461
 ---
 
 # Terms and Acronyms
