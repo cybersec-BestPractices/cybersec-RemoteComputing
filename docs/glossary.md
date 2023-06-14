@@ -12,7 +12,7 @@
 
 ---
 
-# Glossary Terms and Acronyms
+# Terms and Acronyms
 
 * `AES`
    advanced encryption standard
