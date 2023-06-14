@@ -268,7 +268,7 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 ```
 ---
 
-# References
+## References
   - [ssh summary](./ssh-summary.md)
   - https://en.wikibooks.org/wiki/OpenSSH
 
@@ -328,13 +328,23 @@ Among some of the most used MFA tools are:
    In MacOS, you can type in the terminal,
       `open vnc://localhost:5904`
 
+
+# Other Remote Accessible Protocols
+VNC is one protocol used to remotely access computational resources but there are many other ones.
+For instance, communication applications may use their own ones to give users access to control remote resources, or specialized applications may entitle users to control remote computers using proprietary protocols.
+Another example of such is the *Remote Desktop Protocol* (RDP) mostly used in Windows machines.
+
+Independently of the specific protocol used, one should note that these are a liability form cyber-security considerations.
+Extreme caution must be followed when using these type of tools, and awareness that they may weaken the cybersecurity perimeter of an organization or device by enabling weak or blind spots when accessing the remote resource.
+
+
 ---
 
 References:
   - https://datatracker.ietf.org/doc/html/rfc6143
 
 ---
-*Last Modified: Oct. 12, 2022*  --  v 0.1
+*Last Modified: Jun. 13, 2023*  --  v 1.0
 # Virtual Private Network (VPN)
 VPN is a secure, encrypted connection over a publicly shared network.
 Tunneling is the process by which VPN packets reach their intended destination, which
@@ -501,3 +511,45 @@ ssh -vvv USERNAME@remote.system.ip
   - "Are Your Passwords in the Green?", Hive Systems,
     https://www.hivesystems.io/blog/are-your-passwords-in-the-green
     Dated: Apr. 18, 2023
+# CyberSecurity Glossary
+
+## Cyber-Security/Defense Matrix
+
+
+## Social Engineering
+
+
+## PQC - Post Quantun Cryptography
+   - "NIST / Post-Quantum Cryptography"
+      https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022
+
+---
+
+# Terms and Acronyms
+
+* `AES`
+   advanced encryption standard
+* `HTTP`|`HTTPS`
+     hypertext transfer protocol, secure hypertext transfer protocol
+* `MFA` | `2FA`
+     multi-factor (or two-factor) authentication, see [MFA](./MFA.md)
+* `OTP`
+     one time password
+* `PGP`
+     pretty good privacy
+* `PQC`
+     post-quantum cryptography
+* `RSA`
+     Rivest-Shamir-Adelman algorithm
+* `SHA`
+     secure hash algorithm
+* `ssh`
+    secure shell, see [ssh](./ssh-summary.md)
+* `VPN`
+    virtual private network, see [VPN](./VPN.md)
+* `VNC`
+    virtual network computing, see [VNC](./VNC.md)
+
+---
+
+*Last Modified: Jun. 13, 2023* -- v 1.0
