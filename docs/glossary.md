@@ -21,10 +21,12 @@ With the recent advances of quantum computers, one of the potential applications
 At the beggining of 2017, the NIST launched a request for propossals to develop standars to develop Post-Quantum Cryptographic (PQC) algorithms.
 Further information about this ongoing effort can be found in the following links:
 
-   - "NIST / Post-Quantum Cryptography"
+   - "NIST / Post-Quantum Cryptography" - Accessed: June 14, 2023
       https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022
    - "Post-quantum cryptography", Bernstein, Lange; Nature 549 (2017)
      https://www.nature.com/articles/nature23461
+   - "Cisco / Post Quantum Security Brief" - Accessed: June 14, 2023
+     https://www.cisco.com/c/en/us/products/collateral/optical-networking/solution-overview-c22-743948.html
 
 ---
 
