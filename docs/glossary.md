@@ -78,6 +78,10 @@ Further information about this ongoing effort can be found in the following link
      Secure Hash Algorithm
 * `ssh`
     Secure Shell, see [ssh](./ssh-summary.md)
+* `SSL`
+     Secure Sockets Layer
+* `TLS`
+     Transport Layer Security protocol, security protocols applied to communications within a computer network
 * `VPN`
     Virtual Private Network, see [VPN](./VPN.md)
 * `VNC`
