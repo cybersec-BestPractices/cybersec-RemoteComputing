@@ -2,11 +2,12 @@
 
 
 ## Main Content
-  * [ssh Recommendations](docs/ssh.md)
+  * [ssh Recommendations](docs/ssh.md) | [ssh Summary](docs/ssh-summary.md)
   * [MFA](docs/MFA.md)
   * [VNC](docs/VNC.md) / [VPN](docs/VPN.md)
   * [CyberSec Checklist](docs/cyberSec-checklist.md)
   * [CyberSec Best Practices Summary](docs/summary_BP.md)
+  * [Miscellaneous](docs/others.md) | [CyberSecurity Glossary](docs/glossary.md)
 
 ## Summaries
   * [All sections in one document](docs/ALLinONE.md)
