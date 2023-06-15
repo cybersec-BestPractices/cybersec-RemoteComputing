@@ -33,27 +33,29 @@ Further information about this ongoing effort can be found in the following link
 # Terms and Acronyms
 
 * `AES`
-   advanced encryption standard
+   Advanced Encryption Standard (symmetric)
+* `DES`
+   Data Encryption Standard -- **unsecure** deprecated, replaced by AES (https://www.rfc-editor.org/rfc/rfc4772.txt)
 * `HTTP`|`HTTPS`
-     hypertext transfer protocol, secure hypertext transfer protocol
+     HyperText Transfer Protocol, secure hypertext transfer protocol
 * `MFA` | `2FA`
-     multi-factor (or two-factor) authentication, see [MFA](./MFA.md)
+     Multi-Factor (or Two-Factor) Authentication, see [MFA](./MFA.md)
 * `OTP`
-     one time password
+     One Time Password
 * `PGP`
-     pretty good privacy
+     Pretty Good Privacy
 * `PQC`
-     post-quantum cryptography
+     Post-Quantum Cryptography
 * `RSA`
-     Rivest-Shamir-Adelman algorithm
+     Rivest-Shamir-Adelman algorithm (asymmetric)
 * `SHA`
-     secure hash algorithm
+     Secure Hash Algorithm
 * `ssh`
-    secure shell, see [ssh](./ssh-summary.md)
+    Secure Shell, see [ssh](./ssh-summary.md)
 * `VPN`
-    virtual private network, see [VPN](./VPN.md)
+    Virtual Private Network, see [VPN](./VPN.md)
 * `VNC`
-    virtual network computing, see [VNC](./VNC.md)
+    Virtual Network Computing, see [VNC](./VNC.md)
 
 ---
 
