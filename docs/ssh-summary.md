@@ -56,6 +56,7 @@ ssh -vv USERNAME@remote.system.ip
 ssh -vvv USERNAME@remote.system.ip
 ```
 
+[More about ssh](docs/ssh.md)
 
 ---
 *Last Modified: Oct. 12, 2022*  --  v 0.1
