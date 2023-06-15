@@ -36,6 +36,12 @@ Further information about this ongoing effort can be found in the following link
    Advanced Encryption Standard (symmetric)
 * `DES`
    Data Encryption Standard -- **unsecure** deprecated, replaced by AES (https://www.rfc-editor.org/rfc/rfc4772.txt)
+* `ECC`
+   Elliptic Curve Cryptography
+* `ECDH`
+   Elliptic Curve Diffie-Hellman
+* `ECDSA`
+   Elliptic Curve Digital Signature Algorithm
 * `HTTP`|`HTTPS`
      HyperText Transfer Protocol, secure hypertext transfer protocol
 * `MFA` | `2FA`
