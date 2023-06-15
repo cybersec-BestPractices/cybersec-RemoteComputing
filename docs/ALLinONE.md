@@ -353,9 +353,18 @@ is typically a private network.
 ---
 
 *Last Modified: Oct. 12, 2022*  --  v 0.1
-Although not extrictely linked to *remote computing* many different aspects
-in our day-to-day operations involve remote transfering of information, as well as, remote access, trust, etc.
-Among one of the most relevant tools and commodities employed nowadays is eletronic-mail, e-mail.
+Although not strictly linked to *remote computing* many different aspects
+in our day-to-day operations involve remote transferring of information, as well as, remote access, trust, etc.
+Among one of the most relevant tools and commodities employed nowadays is electronic-mail, e-mail.
+
+
+## Firewalls
+In security, a firewall is a *system* that controls the incoming and outgoing information into a system.
+They offer a way to guard, inspect and filter the information flow into the system.
+Firewalls can be implemented in hardware or software.
+Hardware firewalls are mostly used at the level of data centers or Internet service providers, they suppose to act as a general and broad filter of generic attacks, such as denial of service or brute force attacks.
+Software firewalls can be also configured by centralized authorities, as well as by users in their own local systems.
+Examples of this, are the usual firewall settings at level of the OS -- it is strongly recommended to adjust these settings consciously to minimize the inflow or outflow of unnecessary information.
 
 
 ## Email
@@ -372,6 +381,10 @@ communication channel can be decrypted, validated and authenticated.
 ### Refs.
    - https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 
+
+---
+
+*Last Modified: Jun 15, 2023*  --  v 1.0
 # Cyber-security Checklist
 
 * In your *local system*:
