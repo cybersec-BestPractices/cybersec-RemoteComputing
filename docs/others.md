@@ -3,6 +3,15 @@ in our day-to-day operations involve remote transfering of information, as well 
 Among one of the most relevant tools and commodities employed nowadays is eletronic-mail, e-mail.
 
 
+## Firewalls
+In security, a firewall is a *system* that controls the incoming and outgoing information into a system.
+They offer a way to vigilate, inspect and filter the information flow into the system.
+Firewalls can be implemented in hardware or software.
+Hardware firewalls are mostly used at the level of data centers or internet service providers, they suppose to act as a general and broad filter of generic attacks, such as denial of service or brute force attacks.
+Software firewalls can be also configured by centrallized authorities, as well as by users in their own local systems.
+Examples of this, are the usual firewall settings at level of the OS -- it is strongly recommended to adjust these settings consoiusly to minimize the inflow or outflow of unnecesary information.
+
+
 ## Email
 In the same way that it is important to validate
 the integrity and validity of our connections to remote systems, it would also be for other types
