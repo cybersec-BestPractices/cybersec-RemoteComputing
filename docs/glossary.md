@@ -33,23 +33,33 @@ Further information about this ongoing effort can be found in the following link
 # Terms and Acronyms
 
 * `AES`
-   Advanced Encryption Standard (symmetric)
+     Advanced Encryption Standard (symmetric)
 * `DES`
-   Data Encryption Standard -- **unsecure** deprecated, replaced by AES (https://www.rfc-editor.org/rfc/rfc4772.txt)
+     Data Encryption Standard -- **unsecure** deprecated, replaced by AES (https://www.rfc-editor.org/rfc/rfc4772.txt)
+* `DH`
+     Diffie-Hellman algorithm
 * `ECC`
-   Elliptic Curve Cryptography
+     Elliptic Curve Cryptography
 * `ECDH`
-   Elliptic Curve Diffie-Hellman
+     Elliptic Curve Diffie-Hellman
 * `ECDSA`
-   Elliptic Curve Digital Signature Algorithm
+     Elliptic Curve Digital Signature Algorithm
+* `EdDSA`
+     Edwards-curve Digital Signature Algorithm
+* `ECMQV`
+     Elliptic Curve MQV
 * `HTTP`|`HTTPS`
      HyperText Transfer Protocol, secure hypertext transfer protocol
 * `MFA` | `2FA`
      Multi-Factor (or Two-Factor) Authentication, see [MFA](./MFA.md)
+* `MQV`
+     Menezes-Qu-Vanstone, authentication protocol for key agreement based on DH
 * `OTP`
      One Time Password
 * `PGP`
      Pretty Good Privacy
+* `PKC`
+     Public Key Cryptography, aka asymmetric cryptography
 * `PQC`
      Post-Quantum Cryptography
 * `RSA`
