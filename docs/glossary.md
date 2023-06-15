@@ -34,10 +34,16 @@ Further information about this ongoing effort can be found in the following link
 
 * `AES`
      Advanced Encryption Standard (symmetric)
+* `CVE`
+     Common Vulnerability and Exposure
 * `DES`
      Data Encryption Standard -- **unsecure** deprecated, replaced by AES (https://www.rfc-editor.org/rfc/rfc4772.txt)
 * `DH`
      Diffie-Hellman algorithm
+* `DDoS`
+     Distributed DoS attack
+* `DoS`
+     Denial of Service attack
 * `ECC`
      Elliptic Curve Cryptography
 * `ECDH`
