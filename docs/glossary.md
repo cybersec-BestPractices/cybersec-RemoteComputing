@@ -34,6 +34,8 @@ Further information about this ongoing effort can be found in the following link
 
 * `AES`
      Advanced Encryption Standard (symmetric)
+* `ARC`
+     Advanced Research Computing
 * `CVE`
      Common Vulnerability and Exposure
 * `DES`
@@ -54,6 +56,8 @@ Further information about this ongoing effort can be found in the following link
      Edwards-curve Digital Signature Algorithm
 * `ECMQV`
      Elliptic Curve MQV
+* `HPC`
+     High Performance Computing, aka supercomputing
 * `HTTP`|`HTTPS`
      HyperText Transfer Protocol, secure hypertext transfer protocol
 * `MFA` | `2FA`
