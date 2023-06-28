@@ -21,7 +21,7 @@
       `open vnc://localhost:5904`
 
 
-# Other Remote Accessible Protocols
+# Other Remote-Access Protocols
 VNC is one protocol used to remotely access computational resources but there are many other ones.
 For instance, communication applications may use their own ones to give users access to control remote resources, or specialized applications may entitle users to control remote computers using proprietary protocols.
 Another example of such is the *Remote Desktop Protocol* (RDP) mostly used in Windows machines.
