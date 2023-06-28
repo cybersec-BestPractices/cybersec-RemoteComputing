@@ -278,7 +278,7 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 
 # Multi-Factor Authentication (MFA)
 
-Multi-Factor Authentication (MFA) is a tenchqiue employed to strength the process of authenticating against a service.
+Multi-Factor Authentication (MFA) is a technique employed to strength the process of authenticating against a service.
 In a typical situation you would use a set of credentials, such as a username and a passwords or keys to validate your identity.
 By adding an additional way of confirming the identity of an user we can more securely of authenticating that such an user holds the identity is attempting to validate.
 
@@ -329,7 +329,7 @@ Among some of the most used MFA tools are:
       `open vnc://localhost:5904`
 
 
-# Other Remote Accessible Protocols
+# Other Remote-Access Protocols
 VNC is one protocol used to remotely access computational resources but there are many other ones.
 For instance, communication applications may use their own ones to give users access to control remote resources, or specialized applications may entitle users to control remote computers using proprietary protocols.
 Another example of such is the *Remote Desktop Protocol* (RDP) mostly used in Windows machines.
