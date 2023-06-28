@@ -1,6 +1,6 @@
 # Multi-Factor Authentication (MFA)
 
-Multi-Factor Authentication (MFA) is a tenchqiue employed to strength the process of authenticating against a service.
+Multi-Factor Authentication (MFA) is a technique employed to strength the process of authenticating against a service.
 In a typical situation you would use a set of credentials, such as a username and a passwords or keys to validate your identity.
 By adding an additional way of confirming the identity of an user we can more securely of authenticating that such an user holds the identity is attempting to validate.
 
