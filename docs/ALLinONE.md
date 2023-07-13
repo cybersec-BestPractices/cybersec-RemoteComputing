@@ -382,9 +382,17 @@ communication channel can be decrypted, validated and authenticated.
    - https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 
 
+## Passkeys
+Based on the pricniples of **keys** (such as the ssh-keys), are an alternative tp the use of passwords for authentication.
+Their use relies on the implementation of a given application capable of handling them.
+
+
+## Zero Trust
+
+
 ---
 
-*Last Modified: Jun 15, 2023*  --  v 1.0
+*Last Modified: Jul 13, 2023*  --  v 1.0
 # Cyber-security Checklist
 
 * In your *local system*:
@@ -518,6 +526,10 @@ ssh -vvv USERNAME@remote.system.ip
   - "High-Performance Computing (HPC) Security: Architecture, Threat Analysis, and Security Posture",
     https://csrc.nist.gov/publications/detail/sp/800-223/draft
     Dated: Feb. 2023
+
+  - "Univ. of Toronto -- Security Matters",
+    https://securitymatters.utoronto.ca
+    Dated: Jul. 13, 2023
 
   - "Secure Code Game" by GitHub, 
     https://github.com/skills/secure-code-game
