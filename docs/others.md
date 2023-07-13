@@ -27,6 +27,14 @@ communication channel can be decrypted, validated and authenticated.
    - https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 
 
+## Passkeys
+Based on the pricniples of **keys** (such as the ssh-keys), are an alternative tp the use of passwords for authentication.
+Their use relies on the implementation of a given application capable of handling them.
+
+
+## Zero Trust
+
+
 ---
 
 *Last Modified: Jun 15, 2023*  --  v 1.0
