@@ -14,7 +14,7 @@
   * [Summary Portable Document](docs/pdf/cyberSec-BP.pdf)
   * [Tables](docs/pdf/tables.pdf)
   * ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing" ref. paper.](docs/paper.pdf)
-  * This work will be presented at [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
+  * [Presentation slides](docs/pdf/SEHET23_MPonce-RvanZon.pdf) at [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
 
 ## Further Resources
   * Users contributions can be done using the [wiki section](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/wiki)
