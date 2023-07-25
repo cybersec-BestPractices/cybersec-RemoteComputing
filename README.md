@@ -17,7 +17,7 @@
 ## Main References
   * Pre-print version (arXiv)
     ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing"](https://arxiv.org/abs/2306.07192)
-  * Published version to appear in the *Journal of Computational Science Education* (JOCSE) -- in press.
+  * Published version to appear in the [*Journal of Computational Science Education* (JOCSE)[(https://jocse.org) -- in press.
   * [Presentation slides](docs/pdf/SEHET23_MPonce-RvanZon.pdf) from [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
 
 ## Further Resources
