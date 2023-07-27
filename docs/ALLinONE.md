@@ -276,6 +276,68 @@ From `ssh`'s documentation (see https://man.openbsd.org/ssh.1#X):
 
 *Last Modified: Oct. 12, 2022*  --  v 0.1
 
+# SSH Summary
+
+## Connections, forwarding and tunneling
+
+| Connections, forwarding and tunneling   |                           |
+|-----------------------------|---------------------------------------|
+| connection to remote system | `ssh username@remote.system.IP`       |
+|                             | `ssh username@remote.system.IP -p PORTnbr` |
+| with graphics-forwarding    | `ssh -X username@remote.system.IP`    |
+|                             | `ssh -Y username@remote.system.IP`    |
+| tunneling                   | `ssh -R remPort:remote_host:locPort username@remote.system.IP` |
+|                             | `ssh -L locPort:remote_host:remPort username@remote.system.IP` |
+|                             | `ssh -fN -[R _or_ L] port:remote_host:port username@remote.system.IP` |
+| remote execution            | `ssh username@remote.system.IP "remote_cmd_to_exec"` |
+
+
+## Keys
+### Generation
+```
+ssh-keygen -t ed25519
+
+ssh-keygen -t rsa -b 4096
+
+# key generation with comments and specified location
+ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519
+
+# ssh using specific key file
+ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address
+```
+
+### Transfer
+```
+ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
+
+# copying over keys to remote system
+cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"
+```
+
+### Agent to recall key
+```
+ssh-add key-file
+ssh-add key-file -t life
+```
+
+
+## Troubleshooting
+
+### Debugging (verbose mode)
+```
+# -v activates the "verbose mode": resulting in printing debugging messages
+# helpful in diagnosing connection, authentication, and configuration problems
+# Multiple -v options increase the verbosity, the maximum is 3.
+
+ssh -v  USERNAME@remote.system.ip
+ssh -vv USERNAME@remote.system.ip
+ssh -vvv USERNAME@remote.system.ip
+```
+
+[More about ssh](./ssh.md)
+
+---
+*Last Modified: Oct. 12, 2022*  --  v 0.1
 # Multi-Factor Authentication (MFA)
 
 Multi-Factor Authentication (MFA) is a technique employed to strength the process of authenticating against a service.
@@ -383,7 +445,7 @@ communication channel can be decrypted, validated and authenticated.
 
 
 ## Passkeys
-Based on the pricniples of **keys** (such as the ssh-keys), are an alternative tp the use of passwords for authentication.
+Based on the principles of **keys** (such as the ssh-keys), are an alternative to the use of passwords for authentication.
 Their use relies on the implementation of a given application capable of handling them.
 
 
@@ -460,68 +522,6 @@ A summary of the most relevant aspects is available [here](./ssh-summary.md).
 ---
 
 *Last Modified: Oct. 10, 2022*  --  v 0.1
-# SSH Summary
-
-## Connections, forwarding and tunneling
-
-| Connections, forwarding and tunneling   |                           |
-|-----------------------------|---------------------------------------|
-| connection to remote system | `ssh username@remote.system.IP`       |
-|                             | `ssh username@remote.system.IP -p PORTnbr` |
-| with graphics-forwarding    | `ssh -X username@remote.system.IP`    |
-|                             | `ssh -Y username@remote.system.IP`    |
-| tunneling                   | `ssh -R remPort:remote_host:locPort username@remote.system.IP` |
-|                             | `ssh -L locPort:remote_host:remPort username@remote.system.IP` |
-|                             | `ssh -fN -[R _or_ L] port:remote_host:port username@remote.system.IP` |
-| remote execution            | `ssh username@remote.system.IP "remote_cmd_to_exec"` |
-
-
-## Keys
-### Generation
-```
-ssh-keygen -t ed25519
-
-ssh-keygen -t rsa -b 4096
-
-# key generation with comments and specified location
-ssh-keygen -t ed25519 -C "USER@laptop cluster-X" -f $HOME/.ssh/USER_clusterX_ed25519
-
-# ssh using specific key file
-ssh -i $HOME/.ssh/USER_clusterX_ed25519 USERNAME@clusterX.IP.address
-```
-
-### Transfer
-```
-ssh-copy-id  -i $HOME/.ssh/id_ed25519.pub  USERNAME@remote.system.ip
-
-# copying over keys to remote system
-cat $HOME/.ssh/id_ed25519.pub | ssh USERNAME@remote.system.ip "cat >> $HOME/.ssh/authorized_keys"
-```
-
-### Agent to recall key
-```
-ssh-add key-file
-ssh-add key-file -t life
-```
-
-
-## Troubleshooting
-
-### Debugging (verbose mode)
-```
-# -v activates the "verbose mode": resulting in printing debugging messages
-# helpful in diagnosing connection, authentication, and configuration problems
-# Multiple -v options increase the verbosity, the maximum is 3.
-
-ssh -v  USERNAME@remote.system.ip
-ssh -vv USERNAME@remote.system.ip
-ssh -vvv USERNAME@remote.system.ip
-```
-
-[More about ssh](./ssh.md)
-
----
-*Last Modified: Oct. 12, 2022*  --  v 0.1
 # Further References and Resources
   - "High-Performance Computing (HPC) Security: Architecture, Threat Analysis, and Security Posture",
     https://csrc.nist.gov/publications/detail/sp/800-223/draft
@@ -544,24 +544,24 @@ ssh -vvv USERNAME@remote.system.ip
 # CyberSecurity Glossary
 
 ## Cyber-Security/Defense Matrix
-Under the premise that security attacks, vulnerabilities and eventually breaches will occur; cybersecturity experts develop strategies and protocols to follow in the occurrence of these events.
-One way to organize and categorize these is by employing the so-called *cyber defense matrix* where among others, elememts such as, risk, layer or stratum at which the incident occur or was detected, action to be taken, etc. are arranged.
+Under the premise that security attacks, vulnerabilities and eventually breaches will occur; cybersecurity experts develop strategies and protocols to follow in the occurrence of these events.
+One way to organize and categorize these is by employing the so-called *cyber defense matrix* where among others, elements such as, risk, layer or stratum at which the incident occur or was detected, action to be taken, etc. are arranged.
 
 
 ## Social Engineering
-One of the weakest element in any cybersecurity infrastructure is the so-called *human factor*, i.e. the employment of individuals to actually infiltrate and geopardize systems. This can indeed take different forms, e.g. via email manipulation or impersonation --e.g. spam, phishing attempts--, or even convincing individuals of pluging physical devices such as USB sticks of unkown procedence in their computers, etc.
+One of the weakest element in any cybersecurity infrastructure is the so-called *human factor*, i.e. the employment of individuals to actually infiltrate and jeopardize systems. This can indeed take different forms, e.g. via email manipulation or impersonation --e.g. spam, phishing attempts--, or even convincing individuals of plugging-in physical devices such as USB sticks of unknown origin in their computers, etc.
 The most direct form of these attack techniques even target specific individuals by learning and correspondingly acting based on someone's typical preferences or behaviors.
 The generic term employed to describe this type of attacks is *social engineering*, as they are designed and calibrated to the specific idiosyncrasy of the victim's target.
-These attacks are still responsible for large number of cybersecurity breaches, and has been reported that even robust implementations, such as the utilization of MFA combied with other authentication mechansims, could be overcome by convincing and carefully crafted manipulation.
-One of the best advices agaisnt this type of manipulative attacks is to always remain vigilant and suspicious, in particular do NOT trust any sources of unknown procedence or origin.
+These attacks are still responsible for large number of cybersecurity breaches, and has been reported that even robust implementations, such as the utilization of MFA combined with other authentication mechanisms, could be overcome by convincing and carefully crafted manipulation.
+One of the best advises against this type of manipulative attacks is to always remain vigilant and suspicious, in particular do NOT trust any sources of unknown origin.
 
    - "Social engineering in cybersecurity: The evolution of a concept", J.M.Hatfield; Computers & Security 73 (2018)
      https://doi.org/10.1016/j.cose.2017.10.008
 
 
-## PQC - Post Quantun Cryptography
-With the recent advances of quantum computers, one of the potential applications and immediate concers is the capability for "powerful" enough quantum devices to *break* the encryption alogorithm used nowadays.
-At the beggining of 2017, the NIST launched a request for propossals to develop standars to develop Post-Quantum Cryptographic (PQC) algorithms.
+## PQC - Post Quantum Cryptography
+With the recent advances of quantum computers, one of the potential applications and immediate concerns is the capability for "powerful" enough quantum devices to *break* the encryption algorithm used nowadays.
+At the beginning of 2017, the NIST launched a request for proposals to develop standards to develop Post-Quantum Cryptographic (PQC) algorithms.
 Further information about this ongoing effort can be found in the following links:
 
    - "NIST / Post-Quantum Cryptography" - Accessed: June 14, 2023
