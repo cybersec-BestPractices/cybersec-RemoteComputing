@@ -28,7 +28,7 @@ communication channel can be decrypted, validated and authenticated.
 
 
 ## Passkeys
-Based on the pricniples of **keys** (such as the ssh-keys), are an alternative tp the use of passwords for authentication.
+Based on the principles of **keys** (such as the ssh-keys), are an alternative to the use of passwords for authentication.
 Their use relies on the implementation of a given application capable of handling them.
 
 
