@@ -15,9 +15,10 @@
   * [Tables](docs/pdf/tables.pdf)
 
 ## Main References
+  * Published version
+    [*Journal of Computational Science Education* (JOCSE) Volume 14, Issue 2 (November 2023), pp. 10–17](https://doi.org/10.22369/issn.2153-4136/14/2/3).
   * Pre-print version (arXiv)
     ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing"](https://arxiv.org/abs/2306.07192).
-  * Published version to appear in the next issue of the [*Journal of Computational Science Education* (JOCSE)](https://jocse.org).
   * [Presentation slides](docs/pdf/SEHET23_MPonce-RvanZon.pdf) from [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
 
 ## Further Resources
