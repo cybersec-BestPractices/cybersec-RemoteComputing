@@ -22,7 +22,7 @@
   * [Presentation slides](docs/pdf/SEHET23_MPonce-RvanZon.pdf) from [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
 
 ## Presentations
-  * [Cybersecutiry Essentials](docs/pdf/cybersecEssentials-UTSC_April2024.pdf) (April 18, 2024).
+  * [Cybersecutiry Essentials](docs/pdf/presentations/cybersecEssentials-UTSC_April2024.pdf) (April 18, 2024).
 
 
 ## Further Resources
