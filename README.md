@@ -21,6 +21,10 @@
     ["Practical Guidelines for End Users to Enhance Cybersecurity in Remote Computing"](https://arxiv.org/abs/2306.07192).
   * [Presentation slides](docs/pdf/SEHET23_MPonce-RvanZon.pdf) from [SEHET'23](https://sighpceducation.acm.org/events/sehet_23_tech/)@[PEARC'23](https://pearc.acm.org/pearc23/) (July 24, 2023).
 
+## Presentations
+  * [Cybersecutiry Essentials](docs/pdf/cybersecEssentials-UTSC_April2024.pdf) (April 18, 2024).
+
+
 ## Further Resources
   * Users contributions can be done using the [wiki section](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/wiki)
   * Questions are welcome using the repository [issues](https://github.com/cybersec-BestPractices/cybersec-RemoteComputing/issues)
